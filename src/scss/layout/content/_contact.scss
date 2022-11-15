@@ -1,0 +1,33 @@
+@use '../../base/mixins' as m;
+@use '../../base/variables' as v;
+
+.contact{
+    margin-bottom: 5rem;
+    &__title{
+        text-align: center;
+    }
+    &__img{
+        &:hover{
+            opacity: .7;
+            transition: .3s;
+        }
+    }
+    &__grid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    hr{
+        width:100%;
+    }
+}

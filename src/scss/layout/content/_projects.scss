@@ -1,0 +1,42 @@
+@use '../../base/mixins' as m;
+@use '../../base/variables' as v;
+
+.projects{
+    display: grid;
+    justify-content: center;
+
+    &__grid{
+        @include m.desktop{
+            @include m.grid(2,1);
+            gap: 2rem;
+        }
+        padding-bottom: 2rem;
+    }
+ 
+}
+
+.project{
+    margin-bottom: 1rem;
+    &__img{
+        height: 28rem;
+        border-radius: .5rem;
+        -webkit-box-shadow: 4px 3px 17px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 3px 17px -7px rgba(0,0,0,0.75);
+        box-shadow: 4px 3px 17px -7px rgba(0,0,0,0.75);
+        &:hover{
+            opacity: .5;
+            transition: .3s;
+        }
+    }
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    hr{
+        width:100%;
+    }
+}
+
